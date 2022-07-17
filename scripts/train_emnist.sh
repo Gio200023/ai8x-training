@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 train.py --lr 0.001 --optimizer Adam --epochs 500 --deterministic --compress policies/schedule.yaml --model ai85net5online --dataset EMNIST --confusion --param-hist --pr-curves --embedding --device MAX78000  --save-sample 15 "$@"
